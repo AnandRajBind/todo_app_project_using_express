@@ -1,0 +1,21 @@
+import express from "express"
+const app=express();
+
+
+//app.js is working on the routing 
+app.get('/', (req, res)=>
+{
+    res.send("hello world");
+})
+
+app.get('/instgram', (req, res)=>
+{
+    res.send("<h1>You have visited instagram </h1>");
+})
+
+app.get('/x', (req, res)=>
+{
+    res.send("<h1>You have visited tweeter </h1>");
+})
+
+ export default  app;
